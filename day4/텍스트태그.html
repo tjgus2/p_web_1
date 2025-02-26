@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트태그</title>
+    <style>
+        .hr{
+            display: none;
+            background-color: black;
+        }
+
+        .hr_show:hover + .hr{
+            display: block
+        }
+    </style>
+</head>
+<body>
+    <h1>텍스트태그 실습</h1>
+    <h2>안녕하세요</h2>
+    <h3>안녕하세요</h3>
+    <h4>안녕하세요</h4>
+    <h5>안녕하세요</h5>
+    <h6>안녕하세요</h6>
+
+    <p>   
+        우리는 지금 html 
+        <span>텍스트태그</span>
+        공부중
+    </p>
+    <p class="hr_show">p태그는 단락
+        <br>
+        태그입니다
+    </p>
+
+    <hr class="hr">
+    
+</body>
+</html>
