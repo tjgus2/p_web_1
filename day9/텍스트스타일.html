@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트스타일</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Jua&display=swap');
+
+        body {
+            font-family: Hi Melody;
+        }
+
+        h1 {
+            font-family: jua;
+        }
+
+        .text_align_left {
+            text-align: left;
+        }
+
+        .text_align_center {
+            text-align: center;
+        }
+
+        .text_align_right {
+            text-align: right;
+        }
+
+        .vertical_container {
+            font-size: 50px;
+        }
+
+        .vertical_1>span {
+            vertical-align: top;
+            font-size: 16px;
+        }
+
+        .vertical_2>span {
+            vertical-align: middle;
+            font-size: 16px;
+        }
+
+        .vertical_3>span {
+            vertical-align: bottom;
+            font-size: 16px;
+        }
+
+        .line_box>a:nth-child(1) {
+            text-decoration: none;
+        }
+
+        .line_box>a:nth-child(2) {
+            text-decoration: underline;
+        }
+
+        .line_box>a:nth-child(3) {
+            text-decoration: overline;
+        }
+
+        .line_height>p:first-child {
+            line-height: 60px;
+        }
+
+        .line_height>p:last-child {
+            line-height: 1.5;
+            font-size: 40px;
+        }
+
+        .letter_spacing1 {
+            letter-spacing: 10px;
+        }
+
+        .letter_spacing2 {
+            letter-spacing: -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>텍스트 스타일</h1>
+    <div class="text_align_left">왼쪽</div>
+    <div class="text_align_center">가운데</div>
+    <div class="text_align_right">오른쪽</div>
+
+    <hr>
+    <div class="vertical_container">
+        <p class="vertical_1">
+            서브텍스트 맨 위에 올거임
+            <span>서브텍스트</span>
+        </p>
+        <p class="vertical_2">
+            서브텍스트 가운데에 올거임
+            <span>서브텍스트</span>
+        </p>
+        <p class="vertical_3">
+            서브텍스트 맨 아래에 올거임
+            <span>서브텍스트</span>
+        </p>
+    </div>
+
+    <hr>
+    <div class="line_box">
+        <a href="#">텍스트 데코레이션</a>
+        <a href="#">텍스트 데코레이션</a>
+        <a href="#">텍스트 데코레이션</a>
+    </div>
+
+    <div class="line_height">
+        <p>line_height 실습</p>
+        <p>line_height 실습</p>
+        <p>line_height 실습</p>
+    </div>
+
+    <p class="letter_spacing1">자간을 설정함</p>
+    <p class="letter_spacing2">자간을 설정함</p>
+
+</body>
+
+</html>
