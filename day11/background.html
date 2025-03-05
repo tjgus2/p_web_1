@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style>
+        body {
+            height: 5000px
+        }
+
+        .box_container>div {
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+        }
+
+        .box1 {
+            background: aqua;
+        }
+
+        .box2 {
+            background: blue;
+        }
+
+        .box3 {
+            background: chartreuse;
+        }
+
+        .img_box1 {
+            background: url(./image.png);
+            background-size: 150px 150px;
+            background-repeat: repeat;
+            background-position: bottom left;
+        }
+
+        .img_box2 {
+            background: url(./image.png);
+            background-size: 70%;
+            background-repeat: repeat-x;
+            background-position: 15px;
+        }
+
+        .img_box3 {
+            background: url(./image.png);
+            background-size: contain;
+        }
+
+        .img_box4 {
+            background: url(./image.png);
+            background-size: cover;
+        }
+
+        .gradient1 {
+            background: linear-gradient(140deg, red, orange, yellow)
+        }
+
+        .gradient2 {
+            background: radial-gradient(red, orange, yellow)
+        }
+
+        .gradient3 {
+            background: conic-gradient(red, orange, yellow)
+        }
+
+        .gradient_section {
+            background: linear-gradient(black 35%, gray, white);
+            height: 500px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box_container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="img_box1"></div>
+        <div class="img_box2"></div>
+        <div class="img_box3"></div>
+        <div class="img_box4"></div>
+
+        <div class="gradient1"></div>
+        <div class="gradient2"></div>
+        <div class="gradient3"></div>
+    </div>
+
+    <section class="gradient_section"></section>
+
+</body>
+
+</html>
