@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex2</title>
+    <style>
+        section > article > div {
+            background-color: saddlebrown;
+            width: 50px;
+            height: 50px;
+            margin: 3px
+        }
+
+        section > article {
+            height: 200px;
+            border: 1px solid #000;
+            margin: 3px;
+            display: flex;
+        }
+
+        .start {
+            justify-content: start;     
+        }
+
+        .end {
+            justify-content: end;
+        }
+        
+        .center {
+            justify-content: center;
+        }
+
+        .between {
+            justify-content: space-between;
+        }
+
+        .around {
+            justify-content: space-around;
+        }
+
+        .evenly {
+            justify-content: space-evenly;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="justify_content">
+        <article class="start">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+
+        <article class="end">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+
+        <article class="center">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+
+        <article class="between">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+
+        <article class="around">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+
+        <article class="evenly">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+    </section>
+    
+</body>
+</html>
