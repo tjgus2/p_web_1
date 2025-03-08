@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,43 @@
             height: 800px;
             display: flex;
         }
+
+        article>div {
+            background-color: salmon;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+
+        .flex_start {
+            align-items: flex-start;
+        }
+
+        .flex_end {
+            align-items: flex-end;
+        }
+
+        .center {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flex_baseline {
+            align-items: baseline;
+        }
+
+        .baseline {
+            font-size: 100px;
+            width: 500px;
+            height: 500px;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
     </style>
 </head>
+
 <body>
     <section class="container">
         <article class="flex_start">
@@ -31,7 +67,7 @@
         </article>
         <article class="flex_baseline">
             <div>item</div>
-            <div>item</div>
+            <div class="baseline">item</div>
             <div>item</div>
         </article>
         <article class="stretch">
@@ -40,6 +76,7 @@
             <div>item</div>
         </article>
     </section>
-    
+
 </body>
+
 </html>

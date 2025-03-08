@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            background-color: sandybrown;
+            height: 100px;
+            border-radius: 5px;
+            color: white;
+            justify-content: space-between;
+            padding: 0 16px;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 900;
+            font-size: 24px;
+        }
+
+        .menu>ul {
+            display: flex;
+            list-style: none;
+        }
+
+        ul>li>a {
+            padding: 16px;
+            color: white;
+            text-decoration: none;
+        }
+
+        ul>li>a:hover {
+            background-color: rgb(194, 175, 175);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="button">
+            <button>로그인</button>
+            <button>회원가입</button>
+        </div>
+    </header>
+</body>
+
+</html>
