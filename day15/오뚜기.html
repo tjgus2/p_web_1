@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오뚜기</title>
+    <style>
+        section {
+            display: flex;
+            width: 100%;
+        }
+
+        article {
+            width: 40%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;            
+            justify-content: center;
+            position: relative;
+            margin: 20px;
+            border-radius: 25px;
+            padding: 10px;
+            background-size: cover;
+            transition: 0.6s;
+
+        }
+
+        .black {
+            background-color: black;
+            width: 100%;
+            position: absolute;
+            height: 532px;
+            top: 0;
+            left: 0;
+            border-radius: 25px;
+            opacity: 0.1;
+
+        }
+
+        article:nth-child(1) {
+            background-image: url(./오뚜기/1.jpg);
+        }
+
+        article:nth-child(2) {
+            background-image: url(./오뚜기/2.jpg);
+        }
+
+        article:nth-child(3) {
+            background-image: url(./오뚜기/3.jpg);
+        }
+
+        article:hover {
+            flex-shrink: 0;
+        }
+
+        article:hover .black {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+            <div class="black"></div>
+            <div class="text_area">
+                <p>Environmental</p>
+                <h2>환경</h2>
+            </div>
+        </article>
+
+        <article>
+            <div class="black"></div>
+            <div class="text_area">
+                <p>Social</p>
+                <h2>사회</h2>
+            </div>
+        </article>
+
+        <article>
+            <div class="black"></div>
+            <div class="text_area">
+                <p>governance</p>
+                <h2>지배구조</h2>
+            </div>
+        </article>
+    </section>
+    
+</body>
+</html>
