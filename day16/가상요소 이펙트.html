@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소 이펙트</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(144, 136, 200);
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .box {
+            list-style: none;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .box>a {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            position: relative;
+        }
+
+        .box>a::before {
+            width: 100%;
+            height: 1px;
+            content: "";
+            background-color: #fff;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+        }
+
+        .box>a::after {
+            width: 1px;
+            height: 0%;
+            content: "";
+            background-color: #fff;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .container a:hover::before {
+            top: 100%;
+        }
+
+        .container a:hover::after {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="container">
+        <li class="box">
+            <a href="#">html</a>
+        </li>
+        <li class="box">
+            <a href="#">css</a>
+        </li>
+        <li class="box">
+            <a href="#">javascript</a>
+        </li>
+        <li class="box">
+            <a href="#">uxui Design</a>
+        </li>
+        <li class="box">
+            <a href="#">portfolio</a>
+        </li>
+    </ul>
+
+</body>
+
+</html>
